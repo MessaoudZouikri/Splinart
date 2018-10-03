@@ -1,0 +1,40 @@
+build
+_build
+.cache
+dist
+.ipynb_checkpoints
+__pycache__
+
+Vous pouvez à présent initialiser votre projet en utilisant la commande suivante
+
+git init
+
+Nous allons dans un premier temps ajouter les deux fichiers que nous avons créés précédemment.
+
+git add readme.rst .gitignore
+git commit -m "initial commit"
+
+Puis tous les autres fichiers en faisant
+
+git add splinart doc demos ...
+
+Vérifiez avant de faire le commit que tous les fichiers sont les bons et qu'il n'en manque pas.
+
+git commit -m "add splinart"
+
+Initialisez le remote en suivant ce qui est écrit sur votre github. J'avais pour cette exemple
+
+git remote add origin https://github.com/gouarin/splinart.git
+
+Vous pouvez maintenant faire un push de vos trois commits en faisant
+
+git push --set-upstream origin master
+
+Vous pouvez à présent vérifier que tous vos fichiers sont présents sur votre github.
+
+Maintenant que notre dépôt a bien été créé, nous allons nous intéresser (dans l'ordre) aux étapes suivantes
+
+    Mise en place de travis pour l'intégration continue.
+    Validation des push en utilisant pytest et pylint.
+    Génération de la documentation sur ReadTheDocs.
+    Déploiement de splinart sur PyPi et conda.
