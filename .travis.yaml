@@ -1,6 +1,6 @@
 %%file .travis.yml
 
-language: python
+language: python 3.5
 
 install:
   - sudo apt-get update
